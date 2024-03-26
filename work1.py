@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
 from sklearn.model_selection import train_test_split
 car_price = pd.read_csv(r"C:\Users\adity\Downloads\CarPrices\CarPrice_Assignment.csv")
 data = car_price.drop(["CarName","enginelocation", "fuelsystem"], axis=1)
