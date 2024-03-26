@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-data=pd.read_csv('CarPrice_Assignment.csv')
+data=pd.read_csv(r"C:\Users\adity\Downloads\CarPrices\CarPrice_Assignment.csv")
 print(data)
 
 plt.scatter(data.enginesize,data.price)
@@ -11,9 +11,9 @@ plt.scatter(data.enginesize,data.price)
 X = data['enginesize'].values
 y = data['price'].values
 
-mean_X = np.mean(X)
-std_X = np.std(X)
-X_normalized = (X - mean_X) / std_X
+m_X = np.mean(X)
+standard_X = np.std(X)
+X_normalized = (X - m_X) / standard_X
 
 def gradient_descent(m, b, L, X, y):
     m_gradient = 0
